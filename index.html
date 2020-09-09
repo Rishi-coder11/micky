@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="image" id="image">
+        <img src="" alt="Image" class="image-preview__image">
+    </div> <br>
+    <div class="image1" id="image1">
+        <img src="" alt="Image" class="image-preview__image1">
+    </div> <br>
+    <div class="image2" id="image2">
+        <img src="" alt="Image" class="image-preview__image2">
+    </div> <br>
+    <div class="image3" id="image3">
+        <img src="" alt="Image" class="image-preview__image3">
+    </div> <br>
+    <div class="image4" id="image4">
+        <img src="" alt="Image" class="image-preview__image4">
+    </div> <br>
+    <div class="image5" id="image5">
+        <img src="" alt="Image" class="image-preview__image5">
+    </div> <br>
+    <div class="image6" id="image6">
+        <img src="" alt="Image" class="image-preview__image6">
+    </div> <br>
+    <div class="image7" id="image7">
+        <img src="" alt="Image" class="image-preview__image7">
+    </div> <br>
+    <div class="image8" id="image8">
+        <img src="" alt="Image" class="image-preview__image8">
+    </div> <br>
+    <script>
+        const myFile = document.getElementById("myFile");
+        const previewContainer = document.getElementById("image");
+        const previewImage = previewContainer.querySelector(".image-preview__image");
+
+        myFile.addEventListener("change", function() {
+            const file = this.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                previewImage.style.display = "block";   
+
+                reader.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage.setAttribute("src", this.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+        });
+        const myFile1 = document.getElementById("myFile1");
+        const previewContainer1 = document.getElementById("image1");
+        const previewImage1 = previewContainer1.querySelector(".image-preview__image1");
+
+        myFile1.addEventListener("change", function() {
+            const file1 = this.files[0];
+
+            if (file1) {
+                const reader1 = new FileReader();
+
+                previewImage1.style.display = "block";   
+
+                reader1.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage1.setAttribute("src", this.result);
+                });
+
+                reader1.readAsDataURL(file1);
+            }
+        });
+
+        const myFile2 = document.getElementById("myFile2");
+        const previewContainer2 = document.getElementById("image2");
+        const previewImage2 = previewContainer2.querySelector(".image-preview__image2");
+
+        myFile2.addEventListener("change", function() {
+            const file2 = this.files[0];
+
+            if (file2) {
+                const reader2 = new FileReader();
+
+                previewImage2.style.display = "block";   
+
+                reader2.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage2.setAttribute("src", this.result);
+                });
+
+                reader2.readAsDataURL(file2);
+            }
+        });
+
+        const myFile3 = document.getElementById("myFile3");
+        const previewContainer3 = document.getElementById("image3");
+        const previewImage3 = previewContainer3.querySelector(".image-preview__image3");
+
+        myFile3.addEventListener("change", function() {
+            const file3 = this.files[0];
+
+            if (file3) {
+                const reader3 = new FileReader();
+
+                previewImage3.style.display = "block";   
+
+                reader3.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage3.setAttribute("src", this.result);
+                });
+
+                reader3.readAsDataURL(file3);
+            }
+        });
+        const myFile4 = document.getElementById("myFile4");
+        const previewContainer4 = document.getElementById("image4");
+        const previewImage4 = previewContainer3.querySelector(".image-preview__image4");
+
+        myFile4.addEventListener("change", function() {
+            const file4 = this.files[0];
+
+            if (file4) {
+                const reader4 = new FileReader();
+
+                previewImage4.style.display = "block";   
+
+                reader4.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage4.setAttribute("src", this.result);
+                });
+
+                reader4.readAsDataURL(file4);
+            }
+        });
+        const myFile5 = document.getElementById("myFile5");
+        const previewContainer5 = document.getElementById("image5");
+        const previewImage5 = previewContainer5.querySelector(".image-preview__image5");
+
+        myFile5.addEventListener("change", function() {
+            const file5 = this.files[0];
+
+            if (file5) {
+                const reader5 = new FileReader();
+
+                previewImage5.style.display = "block";   
+
+                reader5.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage5.setAttribute("src", this.result);
+                });
+
+                reader5.readAsDataURL(file5);
+            }
+        });
+        const myFile6 = document.getElementById("myFile6");
+        const previewContainer6 = document.getElementById("image6");
+        const previewImage6 = previewContainer6.querySelector(".image-preview__image6");
+
+        myFile6.addEventListener("change", function() {
+            const file6 = this.files[0];
+
+            if (file6) {
+                const reader6 = new FileReader();
+
+                previewImage6.style.display = "block";   
+
+                reader6.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage6.setAttribute("src", this.result);
+                });
+
+                reader6.readAsDataURL(file6);
+            }
+        });
+        const myFile7 = document.getElementById("myFile7");
+        const previewContainer7 = document.getElementById("image7");
+        const previewImage7 = previewContainer7.querySelector(".image-preview__image7");
+
+        myFile7.addEventListener("change", function() {
+            const file7 = this.files[0];
+
+            if (file7) {
+                const reader7 = new FileReader();
+
+                previewImage7.style.display = "block";   
+
+                reader7.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage7.setAttribute("src", this.result);
+                });
+
+                reader7.readAsDataURL(file7);
+            }
+        });
+        const myFile8 = document.getElementById("myFile8");
+        const previewContainer8 = document.getElementById("image8");
+        const previewImage8 = previewContainer8.querySelector(".image-preview__image8");
+
+        myFile8.addEventListener("change", function() {
+            const file8 = this.files[0];
+
+            if (file8) {
+                const reader8 = new FileReader();
+
+                previewImage8.style.display = "block";   
+
+                reader8.addEventListener("load", function() {
+                    console.log(this);
+                    previewImage8.setAttribute("src", this.result);
+                });
+
+                reader8.readAsDataURL(file8);
+            }
+        });
+    </script>
+</body>
+</html>
